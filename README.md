@@ -2,8 +2,9 @@
 
 ## 1. Giới thiệu
 
-Ứng dụng xử lý ảnh phục vụ môn *Xử lý Ảnh* – Đề tài 2: **Phát hiện biên ảnh và ứng dụng**. 
-Cài đặt và hiển thị trực quan các thuật toán: **Sobel, Laplacian, Canny**, và ứng dụng **đếm vật thể** từ ảnh biên.
+Ứng dụng xử lý ảnh phục vụ học phần *Xử lý Ảnh*. 
+Đề tài 2: **Phát hiện biên ảnh và ứng dụng**. 
+Cài đặt và hiển thị trực quan các thuật toán: **Sobel, Laplacian, Canny**, và ứng dụng *đếm vật* từ ảnh biên.
 
 ---
 
@@ -12,11 +13,9 @@ Cài đặt và hiển thị trực quan các thuật toán: **Sobel, Laplacian,
 | Nhóm           | Mô tả                                            |
 | -------------- | ------------------------------------------------ |
 | Tiền xử lý     | Upload ảnh (.jpg, .png) hoặc ma trận CSV    |
-| Phát hiện biên | Sobel, Laplacian, Canny (tùy chỉnh ngưỡng)       |
-| Ứng dụng       | Đếm vật thể, vẽ viền đối tượng                   |
+| Phát hiện biên | Sobel, Laplacian, Canny (đếm vật)       |
 | Hiển thị       | So sánh Original/Processed + 2 biểu đồ Histogram |
 | Lưu kết quả    | Xuất ảnh PNG hoặc CSV tự động theo loại input    |
-
 ---
 
 ## 3. Cấu trúc thư mục
@@ -27,7 +26,6 @@ image_processing_dashboard/
  ┛ controller/
  ┛ view/
  ┛ uploads/
- ┛ results/
  ┛ main.py
  ┛ requirements.txt
  ┛ README.md
@@ -38,25 +36,21 @@ image_processing_dashboard/
 ## 4. Cài đặt & chạy thử
 
 ```bash
-git clone <repo-url>
-cd image_processing_dashboard
 python -m venv venv
 venv\Scripts\activate      # hoặc source venv/bin/activate
 pip install -r requirements.txt
 streamlit run main.py
 ```
-
 Truy cập [Here](http://localhost:8501)
 
 ---
 
 ## 5. Thư viện chính
 
-* `opencv-python` – xử lý ảnh
-* `numpy`, `pandas` – tính toán, xuất CSV
-* `matplotlib` – vẽ biểu đồ histogram
-* `streamlit` – xây dựng giao diện
-
+* `pandas` - xuất ảnh/CSV
+* `numpy` - tính toán ma trận
+* `streamlit` - xây dựng giao diện, real-time
+* `PIL/Image` - Xử lí ảnh RGB
 ---
 
 ## 6. Giao diện mẫu
