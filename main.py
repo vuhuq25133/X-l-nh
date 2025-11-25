@@ -1,4 +1,4 @@
-# streamlit run main.py
+# venv\Scripts\activate streamlit run main.py
 
 import streamlit as st
 

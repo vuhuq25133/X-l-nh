@@ -4,24 +4,14 @@
 # ==============================
 
 # Core image processing
-opencv-python
 numpy
 pillow
 
 # Data and math utilities
 pandas
-scipy
-
-# Visualization / Histogram
-matplotlib
-plotly
 
 # Web framework (choose one depending on deployment)
 streamlit
-# flask
-
-# Misc
-tqdm
 
 #python -m venv venv
 #venv\Scripts\activate
